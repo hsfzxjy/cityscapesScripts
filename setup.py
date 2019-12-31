@@ -23,8 +23,7 @@ if 'CYTHONIZE_EVAL' in os.environ:
     pyxFile = os.path.join("cityscapesscripts", "evaluation", "addToConfusionMatrix.pyx")
     ext_modules = cythonize(pyxFile)
 
-with open("README.md") as f:
-    readme = f.read()
+readme = ''
 
 config = {
     'name': 'cityscapesScripts',
